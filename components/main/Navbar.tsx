@@ -127,13 +127,20 @@ const Navbar = () => {
           {/* Social Icons in Drawer */}
           <div className="flex gap-5 mt-10 px-6">
             {Socials.map((social) => (
-              <Image
-                src={social.src}
-                alt={social.name}
+              <a
+                href={social.link}
                 key={social.name}
-                width={28}
-                height={28}
-              />
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={social.src}
+                  alt={social.name}
+                  key={social.name}
+                  width={28}
+                  height={28}
+                />
+              </a>
             ))}
           </div>
         </div>
