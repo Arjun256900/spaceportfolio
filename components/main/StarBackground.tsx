@@ -7,11 +7,7 @@ import type { Points as ThreePoints } from "three";
 // @ts-expect-error: maath-random has incorrect types but works as expected
 import * as random from "maath/random/dist/maath-random.esm";
 
-interface StarBackgroundProps {
-  // define any specific props here if needed
-}
-
-const StarBackground: React.FC<StarBackgroundProps> = (props) => {
+const StarBackground = (props: any) => {
   const ref = useRef<ThreePoints>(null);
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
