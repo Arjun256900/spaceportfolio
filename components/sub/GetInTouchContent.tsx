@@ -46,7 +46,7 @@ const GetInTouchContent = () => {
 
       {/* Subtext */}
       <p className="text-sm sm:text-md text-center text-neutral-300 mb-8">
-        I'd love to hear from you! Fill out the form below, and I'll do my best
+        I&apos;d love to hear from you! Fill out the form below, and I&apos;ll do my best
         to respond.
       </p>
 
